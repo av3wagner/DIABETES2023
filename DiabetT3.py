@@ -173,3 +173,4 @@ x_train, x_test, y_train, y_test = split(df)
 
 if __name__ == '__main__':
     main()
+#!streamlit run DiabetT3.py --server.port=8089
