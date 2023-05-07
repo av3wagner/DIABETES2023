@@ -1,3 +1,7 @@
+#30.04.2023
+#https://www.datacamp.com/tutorial/random-forests-classifier-python
+#https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
+
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
