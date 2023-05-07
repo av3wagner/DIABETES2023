@@ -1,6 +1,7 @@
 #30.04.2023
 #https://www.datacamp.com/tutorial/random-forests-classifier-python
 #https://towardsdatascience.com/a-practical-guide-to-implementing-a-random-forest-classifier-in-python-979988d8a263
+# https://av3wagner-diabetes2023-diabett3-oid0b6.streamlit.app/
 
 import streamlit as st
 import pandas as pd
