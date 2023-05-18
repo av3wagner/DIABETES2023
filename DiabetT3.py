@@ -50,8 +50,8 @@ def main():
     #st.markdown("")
     
     st.title("Predicting Diabetes Web App")
-    options = st.sidebar.radio('Please choose an option:', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
-
+    st.title("Please choose an option:")
+    options = st.sidebar.radio('', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
     if options == 'Show raw data':
         st.subheader("Diabetes Raw Dataset")
         st.write(df)  
