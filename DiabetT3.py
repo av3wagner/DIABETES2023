@@ -70,13 +70,13 @@ def main():
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
-       col1, col2 = st.columns( [1, 1])
+       col1, col2, col3  = st.columns( [4, 1, 4])
        with col1:              
              st.image(Genmod1, width=400 )
              new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
              st.markdown(new_title, unsafe_allow_html=True)
-       with col2:  
-             st.image(Genmod1, width=400 )
+       with col3:  
+             st.image(Genmod2, width=400 )
              new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
              st.markdown(new_title, unsafe_allow_html=True)
           
