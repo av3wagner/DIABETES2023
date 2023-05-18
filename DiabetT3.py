@@ -50,11 +50,14 @@ def main():
     #st.markdown("")
     
     st.title("Predicting Diabetes Web App")
-    options = st.sidebar.radio('Bitte wählen Sie eine Seite:', ['Beispiel 18 Modellen', 'over us'])
+    options = st.sidebar.radio('Bitte wählen Sie eine Seite:', ['Show raw data', 'over us', 'Example 18 model'])
 
-    if options == 'over us':
+    if options == 'Show raw data':
+        st.subheader("Diabetes Raw Dataset")
+        st.write(df)  
+    elif options == 'over us':
         welcome() 
-    elif options == 'Beispiel 18 Modellen':
+    elif options == 'Example 18 model':
         st.header("Beispiel: 18 Maschinen Lernen Modellen")
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
@@ -69,9 +72,9 @@ def main():
         df = pd.read_csv("data/diabetes.csv")
         return df
     
-    if st.sidebar.checkbox("Show raw data", False):
-        st.subheader("Diabetes Raw Dataset")
-        st.write(df)  
+    #if st.sidebar.checkbox("Show raw data", False):
+    #    st.subheader("Diabetes Raw Dataset")
+    #    st.write(df)  
         
     #if st.sidebar.checkbox("18 model", False):    
     #    st.header("Beispiel: 18 Maschinen Lernen Modellen")
