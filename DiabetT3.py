@@ -50,7 +50,7 @@ def main():
     #st.markdown("")
     
     st.title("Predicting Diabetes Web App")
-    options = st.sidebar.radio('Bitte wählen Sie eine Seite:', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
+    options = st.sidebar.radio('Please choose an option:', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
 
     if options == 'Show raw data':
         st.subheader("Diabetes Raw Dataset")
@@ -58,7 +58,7 @@ def main():
     elif options == 'over us':
         welcome() 
     elif options == 'Example 18 models':
-        st.header("Example: 18 Maschinen Lernen Modellen")
+        st.header("Example: 18 machine learning models")
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
