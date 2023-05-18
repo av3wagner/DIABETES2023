@@ -72,7 +72,7 @@ def main():
     elif options == 'clear':
        #st.title("Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland") 
        new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 16px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland</p>'
-        st.markdown(new_title) 
+       st.markdown(new_title) 
        col1, col2, col3  = st.columns( [4, 1, 4])
        with col1:              
              st.image(Genmod1, width=400 )
