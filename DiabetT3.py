@@ -73,7 +73,7 @@ def main():
         st.header("")
         st.markdown("")
         st.image(Genmod1, width=400 )
-        new_title = '<p style="font-family:sans-serif; color:Black; font-weight:bold; font-size: 12px;">Baustelle: Alexander Wagner 4. von links. Almaty, April 1973</p>'
+        new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
         st.markdown(new_title, unsafe_allow_html=True)
           
     st.sidebar.title("Model Selection Panel")
