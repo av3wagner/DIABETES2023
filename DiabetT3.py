@@ -63,7 +63,7 @@ def main():
         st.header("Example: 18 machine learning models")
         new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 18px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland, 2002</p>'
         st.markdown(new_title, unsafe_allow_html=True) 
-        new_title2 = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 18px;">Generalized Estimating Equations model, </p>'
+        new_title2 = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 18px;">GEE model, complementary log-log distribution</p>'
         st.markdown(new_title2, unsafe_allow_html=True) 
         
         col1, col2, col3  = st.columns( [4, 1, 4])
