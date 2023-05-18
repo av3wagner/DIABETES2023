@@ -51,11 +51,11 @@ def main():
     
     st.title("Predicting Diabetes Web App")
     st.sidebar.title("Please choose an option")
-    options = st.sidebar.radio('', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
+    options = st.sidebar.radio('', ['Show raw data', 'About Us', 'Example 18 models', 'clear'])
     if options == 'Show raw data':
         st.subheader("Diabetes Raw Dataset")
         st.write(df)  
-    elif options == 'over us':
+    elif options == 'About Us':
         welcome() 
     elif options == 'Example 18 models':
         st.header("Example: 18 machine learning models")
