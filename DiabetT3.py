@@ -70,11 +70,12 @@ def main():
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
-       st.title("Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland") 
+       #st.title("Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland") 
+       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 16px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland</p>'
+        st.markdown(new_title) 
        col1, col2, col3  = st.columns( [4, 1, 4])
        with col1:              
              st.image(Genmod1, width=400 )
-             #new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland</p>'
              new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'   
              st.markdown(new_title, unsafe_allow_html=True)
        with col3:  
