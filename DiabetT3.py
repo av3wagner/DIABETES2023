@@ -55,7 +55,10 @@ def main():
     if options == 'over us':
         welcome() 
     elif options == 'Beispiel 18 Modellen':
-        BeModellen()  
+        st.header("Beispiel: 18 Maschinen Lernen Modellen")
+        HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
+        source_code = HtmlFile.read() 
+        components.html(source_code, width=900, height=2000, scrolling=True)
         
     st.sidebar.title("Model Selection Panel")
     st.markdown("Affected by Diabetes or not ?")
