@@ -76,7 +76,7 @@ def main():
               new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'  
               st.markdown(new_title, unsafe_allow_html=True)
         
-        new_title3 = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 22px;">Python ML models</p>'
+        new_title3 = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 22px;">Python 18 machine learning models</p>'
         st.markdown(new_title3, unsafe_allow_html=True) 
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
