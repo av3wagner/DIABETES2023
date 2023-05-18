@@ -75,6 +75,7 @@ def main():
        with col1:              
              st.image(Genmod1, width=400 )
              #new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland</p>'
+             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'   
              st.markdown(new_title, unsafe_allow_html=True)
        with col3:  
              st.image(Genmod2, width=400 )
