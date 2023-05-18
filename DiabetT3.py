@@ -77,10 +77,8 @@ def main():
             }
             </style>
             """, unsafe_allow_html=True)
-
-       #st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True) 
-       #st.title("Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland") 
-       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 16px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland</p>'
+     
+       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 16px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland, 2002</p>'
        st.markdown(new_title, unsafe_allow_html=True) 
        col1, col2, col3  = st.columns( [4, 1, 4])
        with col1:              
@@ -89,7 +87,7 @@ def main():
              st.markdown(new_title, unsafe_allow_html=True)
        with col3:  
              st.image(Genmod2, width=400 )
-             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">München, 2003</p>'
+             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'  
              st.markdown(new_title, unsafe_allow_html=True)
           
     st.sidebar.title("Model Selection Panel")
