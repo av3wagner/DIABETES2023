@@ -62,7 +62,7 @@ def main():
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
-     elif options == 'clear':
+    elif options == 'clear':
         st.header("")
         
         
