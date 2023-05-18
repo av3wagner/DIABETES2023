@@ -24,7 +24,7 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
-logo = Image.open('FlagKZ.jpg')
+logo = Image.open('FlagKZ.JPG')
 
 profile  = Image.open('AWagner.JPG')
 profile2 = Image.open('AWprofil.jpg')
