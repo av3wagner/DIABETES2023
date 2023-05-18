@@ -63,18 +63,22 @@ def main():
         st.header("Example: 18 machine learning models")
         st.markdown("")
         st.image(Genmod1, width=400 )
-        new_title = '<p style="font-family:sans-serif; color:Black; font-weight:bold; font-size: 12px;">Baustelle: Alexander Wagner 4. von links. Almaty, April 1973</p>'
+        new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
         st.markdown(new_title, unsafe_allow_html=True)
         
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
-        st.header("")
-        st.markdown("")
-        st.image(Genmod1, width=400 )
-        new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
-        st.markdown(new_title, unsafe_allow_html=True)
+       col1, col2 = st.columns( [1, 1])
+       with col1:              
+             st.image(Genmod1, width=400 )
+             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
+             st.markdown(new_title, unsafe_allow_html=True)
+       with col2:  
+             st.image(Genmod1, width=400 )
+             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
+             st.markdown(new_title, unsafe_allow_html=True)
           
     st.sidebar.title("Model Selection Panel")
     st.markdown("Affected by Diabetes or not ?")
