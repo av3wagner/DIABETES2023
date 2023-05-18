@@ -72,11 +72,6 @@ def main():
               st.image(Genmod2, width=400 )
               new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'  
               st.markdown(new_title, unsafe_allow_html=True)
-                
-        st.markdown("")
-        st.image(Genmod1, width=400 )
-        new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 14px;">Projekt 2003</p>'
-        st.markdown(new_title, unsafe_allow_html=True)
         
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
