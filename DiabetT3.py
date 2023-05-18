@@ -50,7 +50,7 @@ def main():
     #st.markdown("")
     
     st.title("Predicting Diabetes Web App")
-    st.title("Please choose an option:")
+    st.sidebar.title("Please choose an option")
     options = st.sidebar.radio('', ['Show raw data', 'over us', 'Example 18 models', 'clear'])
     if options == 'Show raw data':
         st.subheader("Diabetes Raw Dataset")
