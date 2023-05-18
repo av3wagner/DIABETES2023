@@ -57,7 +57,7 @@ def main():
         st.write(df)  
     elif options == 'over us':
         welcome() 
-    elif options == 'Example 18 model':
+    elif options == 'Example 18 models':
         st.header("Example: 18 Maschinen Lernen Modellen")
         HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
