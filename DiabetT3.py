@@ -64,9 +64,7 @@ def main():
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
         st.header("")
-        
-        
-        
+          
     st.sidebar.title("Model Selection Panel")
     st.markdown("Affected by Diabetes or not ?")
     st.sidebar.markdown("Choose your model and its parameters")
@@ -75,19 +73,6 @@ def main():
     def load_data():
         df = pd.read_csv("data/diabetes.csv")
         return df
-    
-    #if st.sidebar.checkbox("Show raw data", False):
-    #    st.subheader("Diabetes Raw Dataset")
-    #    st.write(df)  
-        
-    #if st.sidebar.checkbox("18 model", False):    
-    #    st.header("Beispiel: 18 Maschinen Lernen Modellen")
-    #    HtmlFile = open("A++Nostalgi08.html", 'r', encoding='utf-8')
-    #    source_code = HtmlFile.read() 
-    #    components.html(source_code, width=900, height=2000, scrolling=True)
-        
-    #if st.sidebar.checkbox("over us", False):   
-    #    welcome()
         
     st.sidebar.subheader("Select your Classifier")
     classifier = st.sidebar.selectbox("Classifier", ("Decision Tree", "Logistic Regression", "Random Forest"))
