@@ -31,6 +31,8 @@ path = os.getcwd()
 profile  = Image.open('AWagner.JPG')
 profile2 = Image.open('AWprofil.jpg')
 AWbrigade = Image.open('AWbrigade.jpg')
+Genmod1 = Image.open('Genmod1.jpg')
+Genmod2 = Image.open('Genmod2.jpg')
 
 def main():
     st.set_page_config(
@@ -64,6 +66,10 @@ def main():
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
         st.header("")
+        st.markdown("")
+        st.image(Genmod1, width=400 )
+        new_title = '<p style="font-family:sans-serif; color:Black; font-weight:bold; font-size: 12px;">Baustelle: Alexander Wagner 4. von links. Almaty, April 1973</p>'
+        st.markdown(new_title, unsafe_allow_html=True)
           
     st.sidebar.title("Model Selection Panel")
     st.markdown("Affected by Diabetes or not ?")
