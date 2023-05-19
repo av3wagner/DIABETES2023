@@ -89,19 +89,9 @@ def main():
             }
             </style>
             """, unsafe_allow_html=True)
-     
-       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 18px;">Verordnung von Cyclooxygenase-II-selektiven Inhibitoren in Deutschland, 2002</p>'
+       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"></p>'
        st.markdown(new_title, unsafe_allow_html=True) 
-       col1, col2, col3  = st.columns( [4, 1, 4])
-       with col1:              
-             st.image(Genmod1, width=400 )
-             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'   
-             st.markdown(new_title, unsafe_allow_html=True)
-       with col3:  
-             st.image(Genmod2, width=400 )
-             new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"> </p>'  
-             st.markdown(new_title, unsafe_allow_html=True)
-          
+                
     st.sidebar.title("Model Selection Panel")
     st.markdown("Affected by Diabetes or not ?")
     st.sidebar.markdown("Choose your model and its parameters")
