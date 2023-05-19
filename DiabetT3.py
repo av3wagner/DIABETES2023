@@ -82,14 +82,15 @@ def main():
         source_code = HtmlFile.read() 
         components.html(source_code, width=900, height=2000, scrolling=True)
     elif options == 'clear':
-       st.markdown("""
-            <style>
-            .big-font {
-                font-size:100px !important;
-            }
-            </style>
-            """, unsafe_allow_html=True)
-       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"></p>'
+       #st.markdown("""
+       #     <style>
+       #     .big-font {
+       #         font-size:100px !important;
+       #     }
+       #     </style>
+       #     """, unsafe_allow_html=True)
+       new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 16px;">Салем!</p>'
+       #new_title = '<p style="font-family:sans-serif; color:White; font-weight:bold; font-size: 10px;"></p>'
        st.markdown(new_title, unsafe_allow_html=True) 
                 
     st.sidebar.title("Model Selection Panel")
